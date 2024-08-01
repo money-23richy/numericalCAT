@@ -1,0 +1,13 @@
+Lagrange Technique:
+
+Builds the polynomial directly from the supplied points.
+For a large number of points, the polynomial can become rather complex and computationally demanding.
+Not as effective when adding additional data points because it requires recalculating the polynomial in its entirety.
+Newton’s Divided Difference Method:
+Is more effective when building the polynomial sequentially for a greater number of points.
+added data points are easier to add without having to recalculate the entire polynomial.
+employs a recursive method, which has the potential to be more computer-efficient.
+Comparison:
+For short datasets, the outcomes from both approaches are the same.
+Newton's approach is usually favoured for large datasets because of its flexibility and efficiency in adding new points.
+
