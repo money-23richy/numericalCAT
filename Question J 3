@@ -1,0 +1,11 @@
+Comparison:
+Power Iteration Technique:
+
+Appropriate for determining the matching eigenvector and greatest eigenvalue.
+efficient in terms of computation for big matrices.
+If not altered, it might not find every eigenvalue or eigenvector.
+
+QR Algorithm:
+Able to locate each eigenvalue's matching eigenvector.
+higher processing overhead than Power Iteration.
+Ideal for smaller matrices or situations requiring all eigenvalues and eigenvectors
