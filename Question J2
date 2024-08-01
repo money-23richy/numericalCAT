@@ -1,0 +1,23 @@
+def qr_algorithm(A, num_simulations: int):
+    Ak = A.copy()
+    Q_prod = np.eye(A.shape[0])
+
+    for _ in range(num_simulations):
+        Q, R = np.linalg.qr(Ak)
+        Ak = np.dot(R, Q)
+        Q_prod = np.dot(Q_prod, Q)
+    
+    eigenvalues = np.diag(Ak)
+    eigenvectors = Q_prod
+    
+    return eigenvalues, eigenvectors
+
+# Define the matrix
+A = np.array([[4, 1, 1], 
+              [1, 3, -1], 
+              [1, -1, 2]])
+
+eigenvalues, eigenvectors = qr_algorithm(A, 100)
+print("Eigenvalues:", eigenvalues)
+print("Eigenvectors:")
+print(eigenvectors)
